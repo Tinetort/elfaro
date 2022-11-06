@@ -1,0 +1,61 @@
+body {
+    font-family: 'Philosopher', sans-serif;
+    background-color: rgb(199, 215, 221);
+  }
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  #gavroshVideo {
+    width: 100%;
+  }
+  .hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+  }
+  .hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+  }
+  .hrmuted {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 15px 10px black;
+  }
+  .hrmuted:after {
+    /* Not really supposed to work, but does */
+    content: "\00a0"; /* Prevent margin collapse */
+  }
+  .scale {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+  }
+  .scale{
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+  }
+  .scale:hover {
+    transform: scale(1.05); /* Увеличиваем масштаб */
+  }
+  .navbar-toggler{
+    border: none;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navbar-toggler{
+    width: 54px;
+    height: 38px;
+    border: 1px solid #000;
+  }
+  
